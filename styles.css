@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: linear-gradient(45deg, #FF007F, blue);
+    background-size: 100% 100%;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    transition: background-position 0.5s ease;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #fc0;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+  }
+  
+  .star:before {
+    border-bottom: 80px solid #fc0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  
+  .star:after {
+    position: absolute;
+    display: block;
+    color: #fc0;
+    top: 3px;
+    left: -105px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #fc0;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+@keyframes twinkle {
+    0% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+#hero:hover {
+    background-position: 100% 0;
+}
+
+#hero h1 {
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #74abbd;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.component-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.component {
+    text-align: center;
+    width: 200px;
+    margin: 10px; /* Space around each component */
+}
+
+.component i {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+#about {
+    background-color: #74abbd;
+    color: white;
+    padding: 40px;
+    margin: 20px; /* Add margin around the section */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+#about h2 {
+    margin-top: 0; /* Remove top margin for the main heading */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+h3 {
+    margin: 15px 0; /* Space above and below subheadings */
+}
+
+h4 {
+    margin: 10px 0; /* Space above and below sub-subheadings */
+}
+
+p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+#contact {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px;
+    margin: 20px; /* Add margin around the section */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+#contact h2 {
+    margin-top: 0; /* Remove top margin for the main heading */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+#contact h3 {
+    margin: 15px 0; /* Space above and below subheadings */
+}
+
+#contact p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+#contact a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
